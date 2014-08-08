@@ -7,15 +7,39 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainViewController.h"
+//#import "ViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    UINavigationController *mainViewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil]];
+    UINavigationController *viewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    
+
+
+    
+    UINavigationController *mainViewController1 = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil]];
+    
+    UITabBarController* tabBarController = [[UITabBarController alloc] init];
+    tabBarController.delegate = self;
+    tabBarController.viewControllers = [NSArray arrayWithObjects:mainViewController, mainViewController1,viewController, nil];
+    tabBarController.title = @"first";
+//    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+//    navigationController.title = @"new";
+//    navigationController.navigationItem.title = @"new";
+//    navigationController.navigationBarHidden = YES;
+    self.window.rootViewController = tabBarController;
+//    self.window.rootViewController = tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
+
+    
     [self.window makeKeyAndVisible];
+    
+
     return YES;
 }
 
@@ -46,4 +70,11 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark TabBarControllerDelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    //  [self.view addSubview:viewController.view];
+    //  tabBarController.selectedViewController = viewController;
+    viewController.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",80];
+    //  viewController.tabBarItem.title = @"aaa";
+}
 @end

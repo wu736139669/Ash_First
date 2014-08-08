@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C541E9AB294DF5BE18D1BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A671F2F14AEE4277BE5F0824 /* libPods.a */; };
+		A9543E3F1963ACB2006CC216 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9543E3E1963ACB2006CC216 /* MessageViewController.m */; };
+		A958AF9B196E42690029EE41 /* fish_ku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A958AF9A196E42690029EE41 /* fish_ku@2x.png */; };
+		A958AFC0196E5F9C0029EE41 /* fish_heng.gif in Resources */ = {isa = PBXBuildFile; fileRef = A958AFBF196E5F9C0029EE41 /* fish_heng.gif */; };
+		A98624F41963D54000416F38 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = A98624F31963D54000416F38 /* test.gif */; };
 		A9971AA819629A070028FB1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9971AA719629A070028FB1E /* Foundation.framework */; };
 		A9971AAA19629A070028FB1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9971AA919629A070028FB1E /* CoreGraphics.framework */; };
 		A9971AAC19629A070028FB1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9971AAB19629A070028FB1E /* UIKit.framework */; };
@@ -19,6 +24,16 @@
 		A9971AC319629A070028FB1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9971AAB19629A070028FB1E /* UIKit.framework */; };
 		A9971ACB19629A070028FB1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9971AC919629A070028FB1E /* InfoPlist.strings */; };
 		A9971ACD19629A070028FB1E /* Ash_FirstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9971ACC19629A070028FB1E /* Ash_FirstTests.m */; };
+		A9A55C5019865C7E004C5BB5 /* button.9.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A55C4F19865C7E004C5BB5 /* button.9.png */; };
+		A9CEB7051962A6BA00C54CB0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CEB7031962A6BA00C54CB0 /* MainViewController.m */; };
+		A9CEB7061962A6BA00C54CB0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CEB7041962A6BA00C54CB0 /* MainViewController.xib */; };
+		A9ECA8F3198238A60035277D /* AssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ECA8E9198238A60035277D /* AssetHelper.m */; };
+		A9ECA8F4198238A60035277D /* DoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ECA8EB198238A60035277D /* DoAlbumCell.m */; };
+		A9ECA8F5198238A60035277D /* DoAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9ECA8EC198238A60035277D /* DoAlbumCell.xib */; };
+		A9ECA8F6198238A60035277D /* DoImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ECA8EE198238A60035277D /* DoImagePickerController.m */; };
+		A9ECA8F7198238A60035277D /* DoImagePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9ECA8EF198238A60035277D /* DoImagePickerController.xib */; };
+		A9ECA8F8198238A60035277D /* DoPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ECA8F1198238A60035277D /* DoPhotoCell.m */; };
+		A9ECA8F9198238A60035277D /* DoPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9ECA8F2198238A60035277D /* DoPhotoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A66ECFF2A9974F1F991AD71C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A671F2F14AEE4277BE5F0824 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9543E3D1963ACB2006CC216 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		A9543E3E1963ACB2006CC216 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		A958AF9A196E42690029EE41 /* fish_ku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fish_ku@2x.png"; sourceTree = "<group>"; };
+		A958AFBF196E5F9C0029EE41 /* fish_heng.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fish_heng.gif; sourceTree = "<group>"; };
+		A98624F31963D54000416F38 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		A9971AA419629A070028FB1E /* Ash_First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ash_First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9971AA719629A070028FB1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9971AA919629A070028FB1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +70,21 @@
 		A9971AC819629A070028FB1E /* Ash_FirstTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ash_FirstTests-Info.plist"; sourceTree = "<group>"; };
 		A9971ACA19629A070028FB1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9971ACC19629A070028FB1E /* Ash_FirstTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ash_FirstTests.m; sourceTree = "<group>"; };
+		A9A55C4F19865C7E004C5BB5 /* button.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.9.png; sourceTree = "<group>"; };
+		A9CEB7021962A6BA00C54CB0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A9CEB7031962A6BA00C54CB0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A9CEB7041962A6BA00C54CB0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		A9ECA8E8198238A60035277D /* AssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetHelper.h; sourceTree = "<group>"; };
+		A9ECA8E9198238A60035277D /* AssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetHelper.m; sourceTree = "<group>"; };
+		A9ECA8EA198238A60035277D /* DoAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoAlbumCell.h; sourceTree = "<group>"; };
+		A9ECA8EB198238A60035277D /* DoAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoAlbumCell.m; sourceTree = "<group>"; };
+		A9ECA8EC198238A60035277D /* DoAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoAlbumCell.xib; sourceTree = "<group>"; };
+		A9ECA8ED198238A60035277D /* DoImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoImagePickerController.h; sourceTree = "<group>"; };
+		A9ECA8EE198238A60035277D /* DoImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoImagePickerController.m; sourceTree = "<group>"; };
+		A9ECA8EF198238A60035277D /* DoImagePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoImagePickerController.xib; sourceTree = "<group>"; };
+		A9ECA8F0198238A60035277D /* DoPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoPhotoCell.h; sourceTree = "<group>"; };
+		A9ECA8F1198238A60035277D /* DoPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoPhotoCell.m; sourceTree = "<group>"; };
+		A9ECA8F2198238A60035277D /* DoPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoPhotoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,7 @@
 				A9971AAA19629A070028FB1E /* CoreGraphics.framework in Frameworks */,
 				A9971AAC19629A070028FB1E /* UIKit.framework in Frameworks */,
 				A9971AA819629A070028FB1E /* Foundation.framework in Frameworks */,
+				04C541E9AB294DF5BE18D1BB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +115,12 @@
 		A9971A9B19629A070028FB1E = {
 			isa = PBXGroup;
 			children = (
+				A9ECA8E7198238A60035277D /* DoImagePicker */,
 				A9971AAD19629A070028FB1E /* Ash_First */,
 				A9971AC619629A070028FB1E /* Ash_FirstTests */,
 				A9971AA619629A070028FB1E /* Frameworks */,
 				A9971AA519629A070028FB1E /* Products */,
+				A66ECFF2A9974F1F991AD71C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +140,7 @@
 				A9971AA919629A070028FB1E /* CoreGraphics.framework */,
 				A9971AAB19629A070028FB1E /* UIKit.framework */,
 				A9971AC019629A070028FB1E /* XCTest.framework */,
+				A671F2F14AEE4277BE5F0824 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +148,19 @@
 		A9971AAD19629A070028FB1E /* Ash_First */ = {
 			isa = PBXGroup;
 			children = (
+				A958AFBF196E5F9C0029EE41 /* fish_heng.gif */,
+				A9A55C4F19865C7E004C5BB5 /* button.9.png */,
+				A98624F31963D54000416F38 /* test.gif */,
+				A958AF9A196E42690029EE41 /* fish_ku@2x.png */,
 				A9971AB619629A070028FB1E /* AppDelegate.h */,
 				A9971AB719629A070028FB1E /* AppDelegate.m */,
 				A9971AB919629A070028FB1E /* Images.xcassets */,
 				A9971AAE19629A070028FB1E /* Supporting Files */,
+				A9CEB7021962A6BA00C54CB0 /* MainViewController.h */,
+				A9CEB7031962A6BA00C54CB0 /* MainViewController.m */,
+				A9CEB7041962A6BA00C54CB0 /* MainViewController.xib */,
+				A9543E3D1963ACB2006CC216 /* MessageViewController.h */,
+				A9543E3E1963ACB2006CC216 /* MessageViewController.m */,
 			);
 			path = Ash_First;
 			sourceTree = "<group>";
@@ -144,6 +194,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A9ECA8E7198238A60035277D /* DoImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A9ECA8E8198238A60035277D /* AssetHelper.h */,
+				A9ECA8E9198238A60035277D /* AssetHelper.m */,
+				A9ECA8EA198238A60035277D /* DoAlbumCell.h */,
+				A9ECA8EB198238A60035277D /* DoAlbumCell.m */,
+				A9ECA8EC198238A60035277D /* DoAlbumCell.xib */,
+				A9ECA8ED198238A60035277D /* DoImagePickerController.h */,
+				A9ECA8EE198238A60035277D /* DoImagePickerController.m */,
+				A9ECA8EF198238A60035277D /* DoImagePickerController.xib */,
+				A9ECA8F0198238A60035277D /* DoPhotoCell.h */,
+				A9ECA8F1198238A60035277D /* DoPhotoCell.m */,
+				A9ECA8F2198238A60035277D /* DoPhotoCell.xib */,
+			);
+			path = DoImagePicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9971AD019629A070028FB1E /* Build configuration list for PBXNativeTarget "Ash_First" */;
 			buildPhases = (
+				D1C14D0A6BEF4AEA85277D5C /* Check Pods Manifest.lock */,
 				A9971AA019629A070028FB1E /* Sources */,
 				A9971AA119629A070028FB1E /* Frameworks */,
 				A9971AA219629A070028FB1E /* Resources */,
+				35CC792A077D4BD185C0D3F4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,7 +289,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A55C5019865C7E004C5BB5 /* button.9.png in Resources */,
+				A9ECA8F9198238A60035277D /* DoPhotoCell.xib in Resources */,
 				A9971AB219629A070028FB1E /* InfoPlist.strings in Resources */,
+				A9ECA8F5198238A60035277D /* DoAlbumCell.xib in Resources */,
+				A9CEB7061962A6BA00C54CB0 /* MainViewController.xib in Resources */,
+				A958AF9B196E42690029EE41 /* fish_ku@2x.png in Resources */,
+				A9ECA8F7198238A60035277D /* DoImagePickerController.xib in Resources */,
+				A98624F41963D54000416F38 /* test.gif in Resources */,
+				A958AFC0196E5F9C0029EE41 /* fish_heng.gif in Resources */,
 				A9971ABA19629A070028FB1E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,12 +312,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35CC792A077D4BD185C0D3F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C14D0A6BEF4AEA85277D5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9971AA019629A070028FB1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9971AB819629A070028FB1E /* AppDelegate.m in Sources */,
+				A9ECA8F3198238A60035277D /* AssetHelper.m in Sources */,
+				A9ECA8F4198238A60035277D /* DoAlbumCell.m in Sources */,
+				A9CEB7051962A6BA00C54CB0 /* MainViewController.m in Sources */,
+				A9543E3F1963ACB2006CC216 /* MessageViewController.m in Sources */,
+				A9ECA8F8198238A60035277D /* DoPhotoCell.m in Sources */,
+				A9ECA8F6198238A60035277D /* DoImagePickerController.m in Sources */,
 				A9971AB419629A070028FB1E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +473,7 @@
 		};
 		A9971AD119629A070028FB1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66ECFF2A9974F1F991AD71C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -369,6 +487,7 @@
 		};
 		A9971AD219629A070028FB1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66ECFF2A9974F1F991AD71C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,6 +560,7 @@
 				A9971AD219629A070028FB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9971AD319629A070028FB1E /* Build configuration list for PBXNativeTarget "Ash_FirstTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +569,7 @@
 				A9971AD519629A070028FB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
