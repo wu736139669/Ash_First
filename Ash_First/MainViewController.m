@@ -55,7 +55,15 @@
     UIImage *redImage = [[UIImage imageNamed:@"button.9.png"]resizableImageWithCapInsets:insets];
     UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
     [imageView setImage:redImage];
-    [self.view addSubview:imageView];
+//    [self.view addSubview:imageView];
+    
+    DTAttributedLabel* attributedLabel = [[DTAttributedLabel alloc] initWithFrame:CGRectMake(0, 300, 300, 80)];
+    NSString* htmlStr1 = @"<span  style=\"font-size:40px; color:red;\">33</span>%";
+    NSData *data1 = [htmlStr1 dataUsingEncoding:NSUTF8StringEncoding];
+    NSAttributedString *string1 = [[NSAttributedString alloc] initWithHTMLData:data1 documentAttributes:NULL];
+    attributedLabel.backgroundColor = [UIColor clearColor];
+    attributedLabel.attributedString = string1;
+    [self.view addSubview:attributedLabel];
     
 }
 
