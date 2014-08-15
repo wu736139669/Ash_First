@@ -10,6 +10,7 @@
 #import "MessageViewController.h"
 #import <DTCoreText.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "PCPieChart.h"
 @interface MainViewController ()
 
 @end
@@ -31,39 +32,54 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"123";
     self.navigationItem.title = @"woshishui";
-//    self.navigationController.navigationBarHidden = YES;
-    NSString* htmlStr = @"<h1>Header</h1><h2>Subheader</h2><p>Some <em>text</em></p><img src=\"test.gif\"/><a href=\"http://bbs.xmfish.com/read.php?tid=10031229\" target=\"_blank\">查看主题</a><span style=\"font-size:15px;\"><img width='32' height='32' src=\"fish_heng.gif\" /></span> ";
-    htmlStr = @"<span style=\"font-size:15px;\"><img width='32' height='32' src=\"fish_heng.gif\" /></span>";
-    NSData *data = [htmlStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSAttributedString *string = [[NSAttributedString alloc] initWithHTMLData:data documentAttributes:NULL];
+    int height = [self.view bounds].size.width/3*2.; // 220;
+    int width = [self.view bounds].size.width; //320;
+    PCPieChart *pieChart = [[PCPieChart alloc] initWithFrame:CGRectMake(([self.view bounds].size.width-width)/2,([self.view bounds].size.height-height)/2,width,height)];
+    [pieChart setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin];
+    [pieChart setDiameter:width/2];
+    [pieChart setSameColorLabel:YES];
     
-    DTAttributedTextContentView* _attributedTextContextView;
-//    _attributedTextContextView.delegate = self;
-    _attributedTextContextView = nil;
-    _attributedTextContextView = [[DTAttributedTextContentView alloc] init];
-//    _attributedTextContextView.edgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
-    _attributedTextContextView.shouldDrawImages = NO;
-    _attributedTextContextView.shouldDrawLinks = YES;
-    _attributedTextContextView.delegate = self;
-    _attributedTextContextView.backgroundColor = [UIColor clearColor];
-    _attributedTextContextView.attributedString = string;
-    _attributedTextContextView.frame = CGRectMake(15, 150,  200, 500);
-    [self.view addSubview:_attributedTextContextView];
+    [self.view addSubview:pieChart];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+    {
+        pieChart.titleFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:30];
+        pieChart.percentageFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:50];
+    }
+    
+    NSString *sampleFile = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"sample_piechart_data.plist"];
+    NSDictionary *sampleInfo = [NSDictionary dictionaryWithContentsOfFile:sampleFile];
+    NSMutableArray *components = [NSMutableArray array];
+    for (int i=0; i<[[sampleInfo objectForKey:@"data"] count]; i++)
+    {
+        NSDictionary *item = [[sampleInfo objectForKey:@"data"] objectAtIndex:i];
+        PCPieComponent *component = [PCPieComponent pieComponentWithTitle:[item objectForKey:@"title"] value:[[item objectForKey:@"value"] floatValue]];
+        [components addObject:component];
+        
+        if (i==0)
+        {
+            [component setColour:PCColorYellow];
+        }
+        else if (i==1)
+        {
+            [component setColour:PCColorGreen];
+        }
+        else if (i==2)
+        {
+            [component setColour:PCColorOrange];
+        }
+        else if (i==3)
+        {
+            [component setColour:PCColorRed];
+        }
+        else if (i==4)
+        {
+            [component setColour:PCColorBlue];
+        }
+    }
+    [pieChart setComponents:components];
+    
 
-    UIEdgeInsets insets = UIEdgeInsetsMake(5, 5, 5, 5);
-    
-    UIImage *redImage = [[UIImage imageNamed:@"button.9.png"]resizableImageWithCapInsets:insets];
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
-    [imageView setImage:redImage];
-//    [self.view addSubview:imageView];
-    
-    DTAttributedLabel* attributedLabel = [[DTAttributedLabel alloc] initWithFrame:CGRectMake(0, 300, 300, 80)];
-    NSString* htmlStr1 = @"<span  style=\"font-size:40px; color:red;\">33</span>%";
-    NSData *data1 = [htmlStr1 dataUsingEncoding:NSUTF8StringEncoding];
-    NSAttributedString *string1 = [[NSAttributedString alloc] initWithHTMLData:data1 documentAttributes:NULL];
-    attributedLabel.backgroundColor = [UIColor clearColor];
-    attributedLabel.attributedString = string1;
-    [self.view addSubview:attributedLabel];
     
 }
 

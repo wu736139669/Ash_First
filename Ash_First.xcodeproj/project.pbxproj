@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04C541E9AB294DF5BE18D1BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A671F2F14AEE4277BE5F0824 /* libPods.a */; };
+		A90BEBF5199D978100230242 /* PCPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A90BEBF4199D978100230242 /* PCPieChart.m */; };
+		A90BEBF8199D983600230242 /* sample_piechart_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90BEBF7199D983600230242 /* sample_piechart_data.plist */; };
 		A9543E3F1963ACB2006CC216 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9543E3E1963ACB2006CC216 /* MessageViewController.m */; };
 		A958AF9B196E42690029EE41 /* fish_ku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A958AF9A196E42690029EE41 /* fish_ku@2x.png */; };
 		A958AFC0196E5F9C0029EE41 /* fish_heng.gif in Resources */ = {isa = PBXBuildFile; fileRef = A958AFBF196E5F9C0029EE41 /* fish_heng.gif */; };
@@ -49,6 +51,9 @@
 /* Begin PBXFileReference section */
 		A66ECFF2A9974F1F991AD71C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A671F2F14AEE4277BE5F0824 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90BEBF3199D978100230242 /* PCPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPieChart.h; sourceTree = "<group>"; };
+		A90BEBF4199D978100230242 /* PCPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPieChart.m; sourceTree = "<group>"; };
+		A90BEBF7199D983600230242 /* sample_piechart_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample_piechart_data.plist; sourceTree = "<group>"; };
 		A9543E3D1963ACB2006CC216 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		A9543E3E1963ACB2006CC216 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		A958AF9A196E42690029EE41 /* fish_ku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fish_ku@2x.png"; sourceTree = "<group>"; };
@@ -112,9 +117,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90BEBF2199D977200230242 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A90BEBF3199D978100230242 /* PCPieChart.h */,
+				A90BEBF4199D978100230242 /* PCPieChart.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		A90BEBF6199D982E00230242 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A90BEBF7199D983600230242 /* sample_piechart_data.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A9971A9B19629A070028FB1E = {
 			isa = PBXGroup;
 			children = (
+				A90BEBF6199D982E00230242 /* Resource */,
+				A90BEBF2199D977200230242 /* Common */,
 				A9ECA8E7198238A60035277D /* DoImagePicker */,
 				A9971AAD19629A070028FB1E /* Ash_First */,
 				A9971AC619629A070028FB1E /* Ash_FirstTests */,
@@ -297,6 +321,7 @@
 				A958AF9B196E42690029EE41 /* fish_ku@2x.png in Resources */,
 				A9ECA8F7198238A60035277D /* DoImagePickerController.xib in Resources */,
 				A98624F41963D54000416F38 /* test.gif in Resources */,
+				A90BEBF8199D983600230242 /* sample_piechart_data.plist in Resources */,
 				A958AFC0196E5F9C0029EE41 /* fish_heng.gif in Resources */,
 				A9971ABA19629A070028FB1E /* Images.xcassets in Resources */,
 			);
@@ -354,6 +379,7 @@
 				A9ECA8F3198238A60035277D /* AssetHelper.m in Sources */,
 				A9ECA8F4198238A60035277D /* DoAlbumCell.m in Sources */,
 				A9CEB7051962A6BA00C54CB0 /* MainViewController.m in Sources */,
+				A90BEBF5199D978100230242 /* PCPieChart.m in Sources */,
 				A9543E3F1963ACB2006CC216 /* MessageViewController.m in Sources */,
 				A9ECA8F8198238A60035277D /* DoPhotoCell.m in Sources */,
 				A9ECA8F6198238A60035277D /* DoImagePickerController.m in Sources */,
